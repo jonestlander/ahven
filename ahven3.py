@@ -48,8 +48,6 @@ import os,signal
 print ("\n---- START: ",datetime.now().strftime("%Y-%m-%d %H:%M:%S")," ----\n")
 
 # See if ahven already is running, and kill it if it is. Useful is ahven is ran by cron or similar, and might be stuck.
-#for line in os.popen("ps ax | grep ahven | egrep -v 'grep|vi'"):
-#  print(line)
 for line in os.popen("ps ax | grep ahven | egrep -v 'grep|vi' | wc -l"):
   if int(line) > 1:
     for process in os.popen("ps ax | grep ahven | egrep -v 'grep|vi' | head -1"):
