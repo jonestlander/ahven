@@ -1,7 +1,7 @@
 ########################
 #
 # Script to generate random user-like traffic
-# Jon Estlander / January 2022
+# Jon Estlander / December 2022
 #
 # Algorithm:
 #   Gets a list of top sites from a local file
